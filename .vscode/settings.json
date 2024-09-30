@@ -1,0 +1,5 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/andersoncarubelli/Development/A-Labs/andersoncarubelli.github.io/.github/workflows/deploy.yml"
+  }
+}
