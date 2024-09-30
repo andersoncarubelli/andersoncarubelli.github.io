@@ -1,42 +1,23 @@
 ---
+const today = new Date();
 ---
 
-<footer class="text-sm leading-[1.75] mt-4">
-  <div>
-    <p>
-      &copy; {new Date().getFullYear()} Caruba
-    </p>
+<footer class="footer footer-center block mb-5 pt-10">
+  <div class="pb-2">
+    &copy; {today.getFullYear()} Anderson Carubelli
+  </div>
+  <div class="inline opacity-75">
+    Developed by <a
+      href="https://manuelernestog.github.io"
+      target="_blank"
+      class="font-bold">Manuel Ernesto</a
+    > using
+    <!-- Thanks for using this template. You can keep this line to support my work :) -->
+    <a
+      href="https://astrofy-template.netlify.app/"
+      target="_blank"
+      class="font-bold">Astrofy Template ⚡️</a
+    >
   </div>
 </footer>
-
-<style>
-  footer {
-    grid-area: footer;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .gradient-link {
-    position: relative;
-    box-decoration-break: clone;
-    text-decoration: none;
-  }
-
-  .gradient-link:hover:after {
-    transform: translateZ(0) scale(1);
-  }
-
-  .gradient-link:after {
-    left: 0;
-    right: 0;
-    bottom: -2px;
-    content: "";
-    height: 2px;
-    position: absolute;
-    transform: translateZ(0) scaleX(0);
-    transform-origin: left center;
-    transition: all 0.15s ease-in-out;
-  }
-</style>
+<style></style>
