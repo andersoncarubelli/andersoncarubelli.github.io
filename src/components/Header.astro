@@ -1,61 +1,17 @@
----
-import HeaderLink from "./HeaderLink.astro";
-import DarkModeToggle from "./DarkModeToggle.astro";
----
-
-<header>
-  <a
-    class="unset absolute z-10 left-[50%] -top-[100rem] translate-x-[-50%] bg-white text-black px-8 py-2 focus:top-[initial]"
-    href="#main"
-  >
-    Skip to content
-  </a>
-  <nav>
-    <section class="text-text-bold">
-      <ul class="unset flex gap-4 [&>li]:p-0">
-        <li><HeaderLink href="/">Home</HeaderLink></li>
-        <li><HeaderLink href="/blog">Blog</HeaderLink></li>
-        <li><HeaderLink href="/projects">Projects</HeaderLink></li>
-      </ul>
-    </section>
-  </nav>
-
-  <div
-    class="max-[375px]:hidden justify-self-end py-2 flex items-center content-center text-text-bold"
-  >
-    <a
-      class="unset text-xl ml-4 hover:text-text-link"
-      href="https://github.com/andersoncarubelli"
-    >
-      <i
-        class="fa-brands fa-github"
-        aria-hidden="true"
-        title="Caruba on GitHub"></i>
-      <span class="fa-sr-only">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </span>
-    </a>
-    <a
-      class="unset text-xl ml-4 hover:text-text-link"
-      href="https://twitter.com/acarubelli"
-    >
-      <i
-        class="fa-brands fa-twitter"
-        aria-hidden="true"
-        title="Dinesh on Twitter"></i>
-      <span class="fa-sr-only">Dinesh on Twitter</span>
-    </a>
+<div
+  class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm"
+>
+  <div class="navbar">
+    <div class="navbar-start">
+      <label for="my-drawer" class="btn btn-square btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"
+          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </label>
+    </div>
+    <div class="navbar-center">
+      <a class="btn btn-ghost normal-case text-xl" href="/">Manuel Ernesto ⚡️</a>
+    </div>
+    <div class="navbar-end"></div>
   </div>
-  <DarkModeToggle />
-</header>
-<style>
-  header {
-    grid-area: header;
-    display: grid;
-    align-items: center;
-    grid-template-columns: minmax(0, 1fr) minmax(0, max-content) minmax(
-        0,
-        max-content
-      );
-  }
-</style>
+</div>

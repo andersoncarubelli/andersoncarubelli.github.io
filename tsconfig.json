@@ -1,8 +1,15 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "display": "theme/sleek",
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "types": ["astro/client"],
-    "baseUrl": "."
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ]
+    }
   }
 }
