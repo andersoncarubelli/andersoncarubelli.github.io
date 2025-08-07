@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 description: "Por que decidi voltar a escrever — e o que você pode esperar por aqui."
-pubDate: "2025-08-08"
+pubDate: "2025-08-07"
 ---
 
 Há muito tempo, numa galáxia não tão distante assim, eu tinha um blog no finado Blogspot. Bons tempos? Nem tanto. Mas era onde eu publicava o que aprendia — sem algoritmo, sem fórmula, só na raça.
